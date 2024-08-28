@@ -17,7 +17,7 @@ public class var4 {
         System.out.println(c);
         System.out.println(d);
 
-        int e;
+        //int e;
         //System.out.println(e); // 주석을 풀면 컴파일 오류 발생
     }
 }
