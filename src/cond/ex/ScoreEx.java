@@ -11,12 +11,19 @@ package cond.ex;
 점수는 변수(int score)로 지정하고, 해당 변수를 기반으로 학점을 출력하자
  */
 public class ScoreEx {
-
     public static void main(String[] args) {
         int score = 50;
 
         if (score >= 90) {
-            
+            System.out.println("학점은 A 입니다.");
+        } else if (score >= 80 && score <90) {
+            System.out.println("학점은 B 입니다.");
+        } else if (score >= 70) {
+            System.out.println("학점은 C 입니다.");
+        } else if (score >= 60) {
+            System.out.println("학점은 D 입니다.");
+        } else {
+            System.out.println("학점은 F 입니다.");
         }
     }
 }
