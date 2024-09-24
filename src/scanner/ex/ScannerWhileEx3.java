@@ -12,19 +12,30 @@ public class ScannerWhileEx3 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        int num = 0;
         int sum = 0;
+        int count = 0;
 
-        while (true) {
+        /*while (true) {
 
-            System.out.print("정수를 입력하세요. (0을 입력하면 종료): ");
+            System.out.print("정수를 입력하세요. (-1을 입력하면 종료): ");
             int num = input.nextInt();
-            if (num == 0) {
+            if (num == -1) {
                 System.out.println("프로그램 종료");
                 break;
             }
 
             sum += num;
+            count++;
+        }*/
+
+        while ((num = input.nextInt()) != -1) {
+            sum += num;
+            count++;
         }
+        double average = (double) sum / count;
+
         System.out.println("입력한 모든 정수의 합: " + sum);
+        System.out.println("입력한 모든 정수의 평균: " + average);
     }
 }
