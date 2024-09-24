@@ -29,6 +29,8 @@ public class ScannerWhileEx4 {
             int option = scanner.nextInt();
 
             if (option == 1) {
+                scanner.nextLine(); // 이전에 입력된 개행문자 제거
+
                 System.out.print("상품명을 입력하세요: ");
                 String name = scanner.nextLine();
 
