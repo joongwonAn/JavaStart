@@ -4,7 +4,7 @@ public class Array1Ref1 {
 
     public static void main(String[] args) {
         int[] students; // 배열 변수 선언
-        students = new int[5]; // 배열 생성, int형 변수 5개를 다룰 수 있는 배열을 새로 만듦
+        students = new int[5]; // 배열 생성, int형 변수 5개를 다룰 수 있는 배열을 새로 만든다.
 
         // 변수 값 대입
         students[0] = 90;
